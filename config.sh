@@ -2,6 +2,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ll='ls -la'
 PS1='[\u@\h \W]\$ '
 
 # add local gem binaries to path
