@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+export CLICOLOR=1
 alias ll='ls -la'
 PS1='[\u@\h \W]\$ '
 
