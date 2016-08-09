@@ -119,6 +119,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Enable programmable completion features in OSX
+# depends on bash_completion being installed
+#
+#   brew install bash-completion
+#
+if command -v brew >/dev/null; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
+fi
+
 for file in ~/.bash/config/*
   do . $file
 done
