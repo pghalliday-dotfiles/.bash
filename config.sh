@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+if [ -x /usr/libexec/path_helper ]; then
+  eval $(/usr/libexec/path_helper -s)
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
