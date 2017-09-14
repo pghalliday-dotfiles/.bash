@@ -139,3 +139,7 @@ fi
 for file in ~/.bash/config/*
   do . $file
 done
+
+for file in ~/.bash/local-config/*
+  do . $file
+done
